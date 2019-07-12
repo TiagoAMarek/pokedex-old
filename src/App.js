@@ -1,29 +1,10 @@
-import React, { useState, useEffect } from 'react'
-import Pokemons from './states/Pokemons'
+import React from 'react'
+import Hero from './components/Hero'
 
-const App = () => {
-  const [pokemons, setPokemons] = useState([])
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await Pokemons.getPokemons()
-      setPokemons(response)
-    }
-
-    fetchData()
-  }, [])
-
-
-  return (
-    <div className="App">
-      <h1>Pokedex</h1>
-      <ul>
-        {pokemons.map(pokemon => (
-          <li key={pokemon.name}>{pokemon.name}</li>
-        ))}
-      </ul>
-    </div>
-  )
-}
+const App = () => (
+  <div className="App">
+    <Hero></Hero>
+  </div>
+)
 
 export default App
