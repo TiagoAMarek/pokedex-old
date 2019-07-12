@@ -1,11 +1,5 @@
 export default {
-  loading: true,
-  data: {
-    abilities: [],
-    height: null,
-    id: null,
-    name: '',
-    types: [],
-    weight: null,
-  },
+  found: true,
+  loading: false,
+  data: {},
 }
