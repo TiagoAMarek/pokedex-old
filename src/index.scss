@@ -1,9 +1,11 @@
-// Update Bulma colors
-$primary: #29aafe;
-$danger: #ed1e24;
+@import 'stylesheets/fonts';
+@import 'stylesheets/colors';
 
+// Bulma's imports
 @import '~bulma/sass/utilities/_all';
 @import '~bulma/sass/base/_all';
+@import '~bulma/sass/grid/_all';
 @import '~bulma/sass/elements/_all';
 @import '~bulma/sass/form/_all';
 @import '~bulma/sass/layout/hero';
+@import '~bulma/sass/layout/section';

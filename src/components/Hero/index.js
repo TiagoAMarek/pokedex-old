@@ -10,7 +10,7 @@ const Hero = () => {
   const [pokemonName, setPokemonName] = useState('')
   const dispatch = useDispatch()
 
-  const searchForPokemon = () => dispatch(fetchPokemonByName(pokemonName))
+  const searchForPokemon = () => dispatch(fetchPokemonByName(pokemonName.toLowerCase()))
 
   return (
     <div className="Hero">
